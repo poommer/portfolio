@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
 
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
 
 body {
     margin: 0;
@@ -7,11 +10,17 @@ body {
     box-sizing: border-box;
     background-color: #173760;
     font-family: 'Mitr', sans-serif;
+    font-size: 16px;
+    color: #fff;
 }
 
 header a {
     text-decoration: none;
     color: #F3B634;
+}
+
+article{
+    margin-top: 15px;
 }
 
 .social-icon img{
@@ -28,6 +37,11 @@ header a {
     margin: 5px;
 }
 
+main{
+    /* background-color: #F3B634; */
+    margin: 20px;
+    padding: 5px;
+}
 
 
 
@@ -38,10 +52,9 @@ header {
     top: 0px;
     background-color: #003477;
     width: 100%;
-    height: auto;
+    height: 70px;
     box-shadow: 0px -2px 30px 0px #000000a6;
     /* padding: 10px; */
-
 }
 
 #Btn_menu, #Btn_menuClose {
@@ -57,6 +70,158 @@ header {
     ul{
         list-style: none;
     }
+
+#profile img{
+    width: 288px;
+height: 288px;
+border-radius: 288px;
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.hard-skill-box{
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    margin: 5px;
+}
+
+.hard-skill-box-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.hard-skill-box-body{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.hard-skill-item{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: #dddddd;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 2px;
+    margin: 8px;
+}
+
+.hardSkill-Logo{
+   padding: 2px;
+}
+
+#soft-skill{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.soft-skill-box{
+    width: 170px;
+    height: 170px;
+    background-color: #ffffff;
+    color: #F3B634;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#workings-box{
+    background-color: #ffffff;
+    max-width: 440px;
+    min-height: 420px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#workings-box img{
+    width: 100%;
+    height: 225px;
+}
+
+#workings-box p{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(100, 100, 100, 0.651)
+}
+
+#workings-box h3{
+    color: #F3B634;
+}
+
+.working-skills{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+.working-skills h4{
+    background-color: #F3B634;
+    margin: 5px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.Btn{
+    text-decoration: none;
+background-color: #F3B634;
+    margin: 5px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #003477;
+    text-align: center;
+}
+
+.workings-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workings-header{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10px;
+}
+
+.workings-header a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+hr{
+    border: 0;
+        border-top: 2px dashed rgb(212, 212, 212);
+}
+
+
+
+/* เดสท็อป */
 
 
 @media screen and (min-width: 1024px) {
@@ -104,14 +269,36 @@ header {
     #text-nav{
         display: none;
     }
+
+    .hard-skill-box{
+        width:100% ;
+        height: 100%;
+        
+        
+    }
+    
+    .hard-skill-box-head{
+        width: 100%;
+    }
+
+    #hard-skill{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
     
 }
 
 
-@media screen and (max-width:767px) {
+/* phone and tablet */
+
+@media screen and (max-width:767px), screen and (min-width:768px) and (max-width:1023px){
     header{
+        height: auto;
         flex-direction: column;
-        box-shadow: none;
+        justify-content: center;
+        /* align-items: center; */
+
     }
     .text-logo {
         display: flex;
@@ -179,6 +366,22 @@ header {
 
     .nav-active{
         display: flex;
+    }
+
+    #hard-skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .hard-skill-box{ 
+        width: 100%;
+    }
+    
+    .hard-skill-box-head{
+        width: 100%;
     }
 
     
