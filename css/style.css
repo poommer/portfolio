@@ -2,6 +2,7 @@
 
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
+    text-align: justify
 }
 
 body {
@@ -219,6 +220,115 @@ hr{
         border-top: 2px dashed rgb(212, 212, 212);
 }
 
+b{
+    color: #003477;
+}
+
+
+/* *********************** */
+
+#pop{
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000bd;
+    color: #575757;
+}
+
+.pop-box-header{
+    /* width: 100%;
+    height: 30px; */
+    background-color:  #F3B634;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+} 
+
+.pop-box-header h3{
+    color: #fff;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pop-box-header button{
+    cursor: pointer;
+    background:none ;
+    outline: none;
+    border: 0;
+}
+
+.pop-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-content{
+    width: 650px;
+    height: 650px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-box-body-container h3{
+    color: #173760;
+}
+
+.pop-box-body{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%;*/
+    height: 100%; 
+    background-color: #ffffff;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.pop-body img{
+    max-width: 100%;
+}
+
+.pop-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ************** */
+
+.workBor{
+    border: 1px solid #F3B634;
+    padding: 10px;
+    margin: 20px;
+}
+
+.work-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.work-img img{
+    max-width: 70%;
+}
 
 
 /* เดสท็อป */
@@ -292,7 +402,7 @@ hr{
 
 /* phone and tablet */
 
-@media screen and (max-width:767px), screen and (min-width:768px) and (max-width:1023px){
+@media screen and (max-width:767px){
     header{
         height: auto;
         flex-direction: column;
@@ -384,7 +494,109 @@ hr{
         width: 100%;
     }
 
+    .box-content{
+        height: 100%;
+        width: 100%;
+        background-color: #dddddd;
+    }
+
+
     
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    header{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+
+    }
+    .text-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav{
+        background-color: rgba(243, 182, 52, 0.89);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        height: 440px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        padding: 5px;
+
+    }
+
+    #ul-nav{
+        width:320px ;
+        height: 320px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 10px;
+
+    }
+    #ul-nav li{
+        
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+
+    }
+
+    #ul-nav li a{
+        font-size: 24px;
+        width: 100%;
+        padding: 1px;
+        color: #173760;
+
+    }
+
+    #text-nav{
+        /* width: 100%; */
+        text-align: center;
+        color:#173760;
+    }
+
+    #text-nav hr{
+        
+        border: 0;
+        border-top: 2px dashed rgb(212, 212, 212);
+    }
+
+    .nav-active{
+        display: flex;
+    }
+
+    #hard-skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .hard-skill-box{ 
+        width: 100%;
+    }
+    
+    .hard-skill-box-head{
+        width: 100%;
+    }
 
 
     
